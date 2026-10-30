@@ -1,0 +1,806 @@
+@media (min-width: 1450px) {
+  .hero-section {
+    padding-top: 65px;
+    min-height: 495px;
+  }
+  .site-header {
+    height: 115px;
+  }
+}
+@media (max-width: 1000px) {
+  .site-header,
+  .site-footer,
+  main {
+    width: calc(100% - 48px);
+  }
+  .hero-facts {
+    gap: 12px;
+    font-size: 9px;
+  }
+  .vault-art {
+    transform: scale(0.88);
+  }
+  .vault-case {
+    width: 235px;
+    height: 265px;
+  }
+  .loot-diamond {
+    right: 0;
+  }
+  .loot-coin {
+    left: 0;
+  }
+  .loot-bomb {
+    right: -20px;
+  }
+  .orbit-two {
+    width: 380px;
+    height: 380px;
+  }
+  .label-top {
+    left: 0;
+    font-size: 6px;
+  }
+  .hero-copy h1 {
+    font-size: 95px;
+  }
+  .hero-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .hero-description {
+    font-size: 12px;
+  }
+  .score-item {
+    gap: 5px;
+  }
+  .game-layout {
+    grid-template-columns: 1fr 245px;
+    gap: 18px;
+  }
+  .vault-board {
+    padding: 24px;
+  }
+  .board-heading h1 {
+    font-size: 23px;
+  }
+  .tile-grid {
+    gap: 8px;
+  }
+  .timer {
+    width: 65px;
+    height: 65px;
+  }
+  .personal-score {
+    padding: 21px;
+  }
+  .game-topline .eyebrow {
+    font-size: 8px;
+  }
+  .rules-panel {
+    padding: 23px;
+  }
+  .compact .score-icon {
+    width: 27px;
+  }
+  .compact .score-icon .icon {
+    width: 23px;
+    height: 23px;
+  }
+  .compact .score-item {
+    gap: 3px;
+  }
+  .compact .score-item strong {
+    font-size: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .site-header {
+    height: 86px;
+  }
+  .hero-section {
+    min-height: 0;
+    padding-top: 35px;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 0;
+  }
+  .hero-copy h1 {
+    font-size: 80px;
+    margin-top: 21px;
+  }
+  .hero-eyebrow {
+    max-width: 220px;
+    font-size: 7px;
+    line-height: 1.8;
+  }
+  .hero-eyebrow > span {
+    flex-shrink: 0;
+  }
+  .tagline {
+    font-size: 17px;
+    margin-top: 21px;
+  }
+  .hero-description {
+    font-size: 11px;
+  }
+  .hero-facts {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin-top: 19px;
+  }
+  .vault-art {
+    height: 330px;
+    transform: scale(0.78);
+    transform-origin: center right;
+    width: 280px;
+    justify-self: end;
+    margin-left: -40px;
+  }
+  .vault-case {
+    width: 225px;
+    height: 260px;
+  }
+  .orbit {
+    width: 300px;
+    height: 300px;
+  }
+  .orbit-two {
+    width: 360px;
+    height: 360px;
+  }
+  .loot-diamond {
+    right: -17px;
+    top: 10px;
+  }
+  .loot-coin {
+    left: -20px;
+    bottom: 10px;
+  }
+  .loot-bomb {
+    right: -30px;
+    bottom: 25px;
+  }
+  .label-top {
+    top: -20px;
+  }
+  .label-bottom {
+    bottom: -23px;
+    right: -7px;
+    font-size: 6px;
+  }
+  .cross-one {
+    left: -15px;
+    top: 10px;
+  }
+  .hero-description br {
+    display: none;
+  }
+  .score-icon {
+    width: 33px;
+    height: 38px;
+  }
+  .score-icon .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .score-item strong {
+    font-size: 13px;
+  }
+  .score-item strong small {
+    display: none;
+  }
+  .game-topline {
+    align-items: flex-start;
+  }
+  .game-topline .eyebrow {
+    max-width: 190px;
+    line-height: 1.9;
+  }
+  .round-progress {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 120px;
+  }
+  .round-progress > span {
+    display: block;
+    margin-top: 4px;
+  }
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+  .game-sidebar {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .personal-score {
+    align-self: start;
+    height: 100%;
+  }
+  .crew-score-panel {
+    padding: 20px 13px;
+  }
+  .vault-board {
+    padding: 25px 30px 18px;
+  }
+  .tile-grid {
+    max-width: 440px;
+  }
+  .board-heading {
+    margin-bottom: 25px;
+  }
+  .board-heading h1 {
+    font-size: 25px;
+  }
+  .tile {
+    border-radius: 10px;
+  }
+  .results-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .results-main {
+    padding: 22px;
+  }
+  .next-round-card,
+  .final-card {
+    padding: 22px;
+  }
+  .results-heading h1 {
+    font-size: 31px;
+  }
+  .leaderboard-final li {
+    gap: 10px;
+  }
+  .leaderboard-final .player-avatar {
+    width: 31px;
+    height: 31px;
+  }
+  .leaderboard-final .leader-name {
+    font-size: 11px;
+  }
+  .leaderboard-final li > strong {
+    font-size: 16px;
+  }
+}
+@media (max-width: 520px) {
+  .home-screen {
+    overflow-x: clip;
+  }
+  .site-header,
+  .site-footer,
+  main {
+    width: calc(100% - 36px);
+  }
+  .site-header {
+    height: 79px;
+  }
+  .brand {
+    font-size: 13px;
+    gap: 9px;
+  }
+  .brand-mark {
+    width: 33px;
+    height: 37px;
+    border-radius: 8px;
+  }
+  .brand-mark .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .brand small {
+    font-size: 6px;
+    letter-spacing: 1.6px;
+  }
+  .local-badge {
+    font-size: 7px;
+    letter-spacing: 1px;
+    padding: 7px 8px;
+    gap: 5px;
+  }
+  .header-right {
+    gap: 8px;
+  }
+  .exit-button {
+    font-size: 0;
+    padding: 8px;
+  }
+  .exit-button .icon {
+    height: 17px;
+    width: 17px;
+  }
+  .site-footer {
+    margin-top: 26px;
+    padding-block: 21px;
+    gap: 12px;
+    font-size: 8px;
+  }
+  .site-footer > span:last-child {
+    font-size: 6px;
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+  }
+  .site-footer b {
+    margin: 0 3px;
+  }
+  .site-footer .icon {
+    height: 11px;
+    width: 11px;
+  }
+  .hero-section {
+    padding-top: 32px;
+    display: block;
+    position: relative;
+  }
+  .hero-copy {
+    position: relative;
+    z-index: 3;
+  }
+  .hero-copy h1 {
+    font-size: 92px;
+    letter-spacing: -1px;
+    margin-top: 26px;
+  }
+  .hero-eyebrow {
+    max-width: none;
+    font-size: 6.5px;
+    letter-spacing: 1.1px;
+  }
+  .tagline {
+    font-size: 19px;
+    margin-top: 24px;
+  }
+  .hero-description {
+    max-width: 315px;
+    font-size: 11px;
+    line-height: 1.9;
+    margin-top: 12px;
+  }
+  .hero-facts {
+    margin-top: 19px;
+    font-size: 8px;
+    gap: 13px;
+    flex-wrap: nowrap;
+  }
+  .hero-facts .icon {
+    width: 13px;
+    height: 13px;
+  }
+  .vault-art {
+    position: absolute;
+    right: -6px;
+    top: 28px;
+    width: 200px;
+    height: 270px;
+    transform: scale(0.59);
+    transform-origin: center right;
+    opacity: 0.9;
+    pointer-events: none;
+  }
+  .vault-case {
+    width: 225px;
+    height: 260px;
+  }
+  .vault-art .orbit {
+    width: 300px;
+    height: 300px;
+  }
+  .vault-art .orbit-two {
+    width: 360px;
+    height: 360px;
+  }
+  .loot-coin {
+    left: -30px;
+    bottom: -11px;
+    width: 53px;
+    height: 56px;
+  }
+  .loot-bomb {
+    display: none;
+  }
+  .loot-diamond {
+    top: -20px;
+    right: -30px;
+    width: 60px;
+    height: 65px;
+  }
+  .label-top,
+  .label-bottom,
+  .art-cross {
+    display: none;
+  }
+  .vault-art::after {
+    bottom: -30px;
+  }
+  .input-hint {
+    font-size: 9px;
+  }
+  .inner-screen {
+    padding-top: 28px;
+  }
+  .page-heading {
+    margin-bottom: 25px;
+  }
+  .page-heading h1 {
+    font-size: 34px;
+  }
+  .page-heading > p {
+    font-size: 11px;
+  }
+  .page-heading .eyebrow {
+    font-size: 8px;
+  }
+  .rules-panel {
+    padding: 23px;
+  }
+  .rules-panel h2 {
+    font-size: 26px;
+  }
+  .rule-step {
+    gap: 11px;
+  }
+  .rule-step > .icon {
+    display: none;
+  }
+  .rule-step p {
+    font-size: 11px;
+  }
+  .rules-panel .scoring-guide {
+    gap: 3px;
+  }
+  .rules-panel .compact .score-item {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  .rules-panel .score-name {
+    font-size: 9px;
+  }
+  .round-roadmap > div {
+    gap: 6px;
+  }
+  .round-roadmap strong {
+    font-size: 16px;
+  }
+  .round-roadmap small {
+    font-size: 8px;
+  }
+  .game-topline {
+    margin-bottom: 19px;
+  }
+  .game-topline .eyebrow {
+    font-size: 7px;
+    max-width: 170px;
+  }
+  .game-topline b {
+    margin: 0 5px;
+  }
+  .round-progress {
+    max-width: 115px;
+    font-size: 8px;
+  }
+  .round-progress i {
+    width: 13px;
+    height: 4px;
+  }
+  .vault-board {
+    padding: 22px 15px 16px;
+  }
+  .board-heading {
+    gap: 8px;
+    padding-inline: 3px;
+    margin-bottom: 23px;
+  }
+  .board-heading h1 {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+  .board-heading p {
+    font-size: 9px;
+    margin-top: 6px;
+  }
+  .phase-label {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+  .phase-label .icon {
+    width: 14px;
+    height: 14px;
+  }
+  .timer {
+    height: 61px;
+    width: 61px;
+    padding: 2px;
+  }
+  .timer strong {
+    font-size: 25px;
+  }
+  .timer small {
+    font-size: 6px;
+  }
+  .tile-grid {
+    gap: 7px;
+  }
+  .tile {
+    border-radius: 8px;
+    border-bottom-width: 4px;
+  }
+  .tile-face > .icon {
+    width: 36px;
+    height: 36px;
+  }
+  .tile-concealed .tile-face > .icon {
+    height: 24px;
+    width: 24px;
+  }
+  .grid-size-6 {
+    gap: 5px;
+  }
+  .grid-size-6 .tile-face > .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .grid-size-6 .tile-concealed .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .grid-size-6 .tile-points {
+    font-size: 8px;
+  }
+  .grid-size-6 .claim-marker {
+    font-size: 5px;
+    right: 2px;
+    bottom: 2px;
+    padding: 1px 2px;
+  }
+  .grid-size-6 .tile-position {
+    font-size: 6px;
+    left: 5px;
+    bottom: 3px;
+  }
+  .grid-size-6 .tile::before {
+    inset: 3px;
+  }
+  .board-bottom {
+    font-size: 8px;
+    margin-top: 17px;
+  }
+  .board-bottom > span:last-child {
+    font-size: 7px;
+  }
+  .game-sidebar {
+    gap: 12px;
+  }
+  .personal-score {
+    padding: 18px 15px;
+  }
+  .personal-score .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.4px;
+  }
+  .total-score {
+    font-size: 35px;
+    margin-top: 10px;
+    letter-spacing: -1px;
+  }
+  .total-score small {
+    margin-left: 5px;
+    font-size: 9px;
+  }
+  .personal-score > div {
+    margin-top: 12px;
+    padding-bottom: 14px;
+    font-size: 9px;
+  }
+  .personal-score > div strong {
+    font-size: 12px;
+  }
+  .live-feedback {
+    font-size: 9px;
+    align-items: flex-start;
+    margin-top: 14px;
+  }
+  .live-feedback .icon {
+    height: 13px;
+    width: 13px;
+    margin-top: 1px;
+  }
+  .crew-score-panel {
+    padding: 17px 8px;
+  }
+  .leaderboard .panel-title {
+    gap: 3px;
+    margin-bottom: 10px;
+  }
+  .leaderboard .panel-title h2 {
+    font-size: 11px;
+  }
+  .leaderboard .panel-step {
+    font-size: 6px;
+    letter-spacing: 0.5px;
+  }
+  .leaderboard li {
+    padding: 10px 4px;
+    gap: 6px;
+  }
+  .leaderboard .rank {
+    width: 11px;
+    font-size: 8px;
+  }
+  .leaderboard .player-avatar {
+    height: 24px;
+    width: 24px;
+    border-radius: 6px;
+  }
+  .leaderboard .player-avatar .icon {
+    height: 17px;
+    width: 17px;
+  }
+  .leader-name {
+    font-size: 9px;
+  }
+  .leader-name small {
+    font-size: 7px;
+  }
+  .leaderboard li > strong {
+    font-size: 10px;
+  }
+  .game-tip {
+    font-size: 8px;
+    text-align: center;
+    align-items: flex-start;
+    margin-top: 18px;
+  }
+  .game-tip .icon {
+    width: 12px;
+    height: 12px;
+  }
+  .results-heading h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .result-emblem {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .results-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .results-main {
+    padding: 24px;
+  }
+  .results-side {
+    gap: 18px;
+  }
+  .results-main .leaderboard .panel-title h2 {
+    font-size: 13px;
+  }
+  .results-main .leaderboard .panel-step {
+    font-size: 8px;
+  }
+  .results-main .leaderboard li {
+    padding: 13px 7px;
+    gap: 10px;
+  }
+  .results-main .leaderboard .leader-name {
+    font-size: 12px;
+  }
+  .results-main .leaderboard .player-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  .results-main .leaderboard .player-avatar .icon {
+    width: 22px;
+    height: 22px;
+  }
+  .results-main .leaderboard li > strong {
+    font-size: 14px;
+  }
+  .next-round-card,
+  .final-card {
+    padding: 25px;
+  }
+  .next-round-card h2 {
+    font-size: 25px;
+  }
+  .next-round-card .button {
+    min-height: 49px;
+  }
+  .results-main .leaderboard-final .panel-title h2 {
+    font-size: 19px;
+  }
+  .final-card > .icon {
+    margin-top: 0;
+    width: 75px;
+    height: 75px;
+  }
+  .results-screen > .scoring-guide {
+    margin-top: 25px;
+  }
+  .results-screen > .compact .score-item {
+    gap: 2px;
+  }
+  .exit-dialog {
+    padding: 25px;
+  }
+  .button-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .site-header,
+  .site-footer,
+  main {
+    width: calc(100% - 20px);
+  }
+  .vault-board {
+    padding-inline: 4px;
+  }
+  .grid-size-6 {
+    gap: 4px;
+  }
+  .hero-copy h1 {
+    font-size: 83px;
+  }
+  .vault-art {
+    right: -8px;
+    transform: scale(0.5);
+  }
+  .hero-facts {
+    gap: 9px;
+    font-size: 7px;
+  }
+  .hero-description {
+    max-width: 275px;
+  }
+  .board-heading h1 {
+    font-size: 20px;
+  }
+  .board-heading p {
+    font-size: 8px;
+  }
+  .timer {
+    width: 54px;
+    height: 54px;
+  }
+  .tile-grid {
+    gap: 5px;
+  }
+  .tile-face > .icon {
+    width: 29px;
+    height: 29px;
+  }
+  .game-sidebar {
+    grid-template-columns: 1fr;
+  }
+  .crew-score-panel .leaderboard .leader-name {
+    font-size: 12px;
+  }
+  .crew-score-panel .leaderboard li > strong {
+    font-size: 13px;
+  }
+  .personal-score {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .personal-score .eyebrow,
+  .personal-score .total-score {
+    grid-column: 1;
+  }
+  .personal-score > div {
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+  }
+  .personal-score .live-feedback {
+    grid-column: 1/-1;
+  }
+  .results-main {
+    padding: 20px;
+  }
+}
