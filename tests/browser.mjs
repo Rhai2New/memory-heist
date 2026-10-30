@@ -5,7 +5,8 @@ import { chromium } from 'playwright'
 
 await build()
 const server = await preview({ preview: { host: '127.0.0.1', port: 5175, strictPort: true } })
-const base = 'http://127.0.0.1:5175'
+const origin = 'http://127.0.0.1:5175'
+const base = `${origin}/memory-heist/`
 const browser = await chromium.launch(process.env.PLAYWRIGHT_CHROMIUM === '1' ? {} : { channel: 'chrome', headless: true })
 await mkdir('test-artifacts', { recursive: true })
 const report = [], errors = [], externalRequests = []
@@ -26,7 +27,7 @@ async function open(width = 1440) {
   const page = await context.newPage()
   page.on('pageerror', (error) => errors.push(error.message))
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()) })
-  page.on('request', (request) => { if (new URL(request.url()).origin !== base) externalRequests.push(request.url()) })
+  page.on('request', (request) => { if (new URL(request.url()).origin !== origin) externalRequests.push(request.url()) })
   await page.goto(base)
   await page.evaluate(() => document.fonts.ready)
   return page

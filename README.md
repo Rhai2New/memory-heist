@@ -39,7 +39,7 @@ npm ci
 npm run dev
 ```
 
-Open the URL Vite prints, normally **http://localhost:5173**. No backend, accounts, environment variables, or external service setup is required.
+Open the URL Vite prints, normally **http://localhost:5173/memory-heist/**. No backend, accounts, environment variables, or external service setup is required.
 
 ## Build, test, and deploy
 
@@ -52,7 +52,9 @@ npm run build
 
 Core tests cover scoring, invalid picks, turn boundaries, five-round progression, ties and reset. Browser tests run complete games for 2, 3 and 4 players and check mobile layouts. Browser tests start their own Vite server and use installed Chrome. Alternatively run `npx playwright install chromium` and set `PLAYWRIGHT_CHROMIUM=1`.
 
-Deploy the existing repository to Netlify as a static Vite site: **build command `npm run build`**, **publish directory `dist`**. The root `netlify.toml` supplies these settings. For a manual static upload, build locally and upload the `dist` folder. `npm run package` creates a source archive named `netlify-ready-game.zip`; it is not the built `dist` upload.
+The existing repository is configured to deploy to **https://rhai2new.github.io/memory-heist/** using `.github/workflows/deploy.yml`. Pushes to `main` (or a manual run from the Actions tab) install dependencies, build `dist`, and publish it through the official GitHub Pages Actions. The repository's **Settings → Pages → Source** must be **GitHub Actions**. Vite uses `/memory-heist/` as its base path for development and production.
+
+GitHub Pages requires a public repository on GitHub Free, or a supported paid plan for private repositories. Automatic Pages setup was rejected for this private repository with “Your current plan does not support GitHub Pages for this repository.” Make the existing repository public or use an eligible plan, select GitHub Actions as the Pages source, then rerun the deployment workflow.
 
 ## Technology and structure
 
